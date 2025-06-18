@@ -33,25 +33,6 @@ The table below summarizes five training instances of neural networks, each usin
 
 Our experiments demonstrate that classical ML models and neural networks each have strengths and weaknesses in predicting EUR/USD direction. The tuned Support Vector Machine (SVM) model achieved the highest F1 score (0.6684) on the test set, driven by perfect recall (1.0000) but modest precision (0.5019). This suggests the SVM was highly aggressive in predicting “up” movements, capturing all actual positives but also generating many false positives. In contrast, the best neural network (Instance 3: RMSprop + L1 + Early Stopping) yielded a more balanced trade‑off, with precision at 0.5098, recall at 0.5541, and an overall F1 of 0.5310. Although the NN’s F1 was lower than the SVM’s, its improved precision reduces false alerts, which could be preferable in a trading context that penalizes overtrading.
 
-**Insights from Neural Network Optimization:**
-
-* **Instance 1 (Baseline with SGD):** A basic two‑layer network achieved an F1 of 0.4975. Without any regularization or advanced optimizers, it struggled to generalize, overfitting early and exhibiting high validation loss (0.7453) compared to later instances.
-
-* **Instance 2 (Adam + Dropout):** Introducing dropout at 30% reduced overfitting (validation loss 0.6956), but the F1 fell slightly to 0.4834. Dropout improved robustness but led to underfitting when used alone, evidenced by lower recall (0.4489).
-
-* **Instance 3 (RMSprop + L1 + Early Stopping):** The combination of the RMSprop optimizer, L1 regularization (0.001), and early stopping yielded the best neural network performance. Early stopping prevented overtraining after approximately 20 epochs, while L1 regularization encouraged sparsity. This model balanced precision (0.5045) and recall (0.5376) effectively, resulting in the highest NN F1 (0.5205) on validation and strong test‑set metrics.
-
-* **Instance 4 (AdamW + L1\_L2 + BatchNorm):** Although a sophisticated configuration, the deeper network with dual regularization and batch normalization underperformed (F1 of 0.1722). The high L1\_L2 penalty (0.01) likely constrained the weights excessively, leading to underfitting and a spike in validation loss (0.9310).
-
-* **Instance 5 (Nadam + Deep Architecture):** A deeper three‐layer design with Nadam and strong dropout (50%) returned an F1 of 0.5005. While this model had potential, its complexity required more data and tuning to outperform simpler networks.
-
-**Key Takeaways:**
-
-1. **Optimizer Choice Matters:** RMSprop with L1 and early stopping outperformed Adam and Nadam for this dataset, likely due to its adaptive learning rate handling of sparse signals.
-2. **Regularization Balance:** L1 regularization effectively reduced overfitting without collapsing performance; overly aggressive dual regularization hindered learning.
-3. **Early Stopping Utility:** Monitoring validation loss prevented wasted epochs and preserved model states at their performance peak.
-4. **Model Complexity:** Deeper architectures did not guarantee better results on limited FX data—simplicity with targeted optimizations was more effective.
-
 ---
 
 ## Instructions to Run
@@ -116,6 +97,6 @@ FX_DIRECTION_PREDICTIVE_MODEL/
 
 ## Video
 
-> Video[Include 5-minute video link here – camera must be on, explain optimization choices and result interpretation.]
+> [Video](https://youtu.be/XQ--iiXhZRg)]
 
 ---
