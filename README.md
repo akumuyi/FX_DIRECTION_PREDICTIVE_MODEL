@@ -8,8 +8,8 @@ This project investigates the prediction of EUR/USD daily direction (up/down) us
 
 The dataset used is a publicly available historical EUR/USD dataset, containing Open, High, Low, Close (OHLC) prices and Volume. Technical indicators like RSI, MACD, ATR, ADX, moving averages, and volatility were engineered using the `ta` or `talib` Python libraries. Additional features include price change, log-transformed volume, and rolling spreads.
 
-Source: [DukasCopy](https://www.dukascopy.com/swiss/english/marketwatch/historical/)
-[Google Sheets CSV Link](https://docs.google.com/spreadsheets/d/1vy592idgw6ifdccWXf1nV6Wf1VGkqcvCoj4OnbU4loI/export?format=csv)
+- Source: [DukasCopy](https://www.dukascopy.com/swiss/english/marketwatch/historical/)
+- [Google Sheets CSV Link](https://docs.google.com/spreadsheets/d/1vy592idgw6ifdccWXf1nV6Wf1VGkqcvCoj4OnbU4loI/export?format=csv)
 
 ---
 
@@ -85,9 +85,9 @@ nn_model = load_model("saved_models/best_nn_model.keras")
 ## File Structure
 
 ```
-EURUSD_Prediction_Project/
-├── notebook.ipynb
+FX_DIRECTION_PREDICTIVE_MODEL/
 ├── README.md
+├── Summative_Intro_to_ml_[Abiodun_Kumuyi]_assignment.ipynb
 ├── saved_models/
 │   ├── logistic_regression.pkl
 │   ├── svm.pkl
@@ -111,6 +111,6 @@ EURUSD_Prediction_Project/
 
 ## Video
 
-> \[Include 5-minute video link here – camera must be on, explain optimization choices and result interpretation.]
+> Video[Include 5-minute video link here – camera must be on, explain optimization choices and result interpretation.]
 
 ---
