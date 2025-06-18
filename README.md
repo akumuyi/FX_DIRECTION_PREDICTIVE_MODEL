@@ -66,6 +66,7 @@ jupyter notebook Summative_Intro_to_ml_[Abiodun_Kumuyi]_assignment.ipynb
 Run the cell for installing dependencies
 
 3. **Explore the notebook:**
+
 Run all cells to see outputs.
 
 5. **To load best models:**
@@ -86,8 +87,6 @@ nn_model = load_model("saved_models/best_nn_model.keras")
 
 ```
 FX_DIRECTION_PREDICTIVE_MODEL/
-├── README.md
-├── Summative_Intro_to_ml_[Abiodun_Kumuyi]_assignment.ipynb
 ├── saved_models/
 │   ├── logistic_regression.pkl
 │   ├── svm.pkl
@@ -98,6 +97,8 @@ FX_DIRECTION_PREDICTIVE_MODEL/
 │   ├── nn_instance_3.keras
 │   ├── nn_instance_4.keras
 │   ├── nn_instance_5.keras
+├── README.md
+├── Summative_Intro_to_ml_[Abiodun_Kumuyi]_assignment.ipynb
 ├── architecture.png
 ```
 
