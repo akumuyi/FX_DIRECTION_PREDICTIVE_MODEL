@@ -62,10 +62,16 @@ Our experiments demonstrate that classical ML models and neural networks each ha
 jupyter notebook Summative_Intro_to_ml_[Abiodun_Kumuyi]_assignment.ipynb
 ```
 2. **Install dependencies:**
-Run the cell for installing dependencies
 
-3. **Explore the notebook:**
-Run all cells to see outputs.
+```text   
+Run the cell for installing dependencies
+```
+
+4. **Explore the notebook:**
+
+```text
+Run all cells to see outputs
+```
 
 5. **To load best models:**
 
